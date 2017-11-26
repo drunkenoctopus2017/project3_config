@@ -1,9 +1,21 @@
 ﻿# Story event history service
 # used by chart service
-
 spring: 
   application: 
     name: octo-story-history-service
+  rabbitmq:
+    host: localhost
+    password: guest
+    username: guest
+    port: 5672
+ 
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: updatestorymessage
+    default:
+      contentType: application/json
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
     database: ORACLE
