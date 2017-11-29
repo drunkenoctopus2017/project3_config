@@ -5,12 +5,12 @@ spring:
   application:
     name: octo-zuul
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true 
-    serviceUrl:
-      defaultZone: http://18.217.119.188:8761/octo-eureka
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true 
+#    serviceUrl:
+#      defaultZone: http://18.217.119.188:8761/octo-eureka
 
 hystrix:
   command:
