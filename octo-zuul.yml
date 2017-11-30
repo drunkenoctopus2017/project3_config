@@ -22,7 +22,7 @@ hystrix:
 
 zuul:
 routes:
-  account:
+  octo-auth:
     path: /octo-auth/**
     sensitiveHeaders:
     serviceId: octo-auth
