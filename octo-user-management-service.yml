@@ -15,7 +15,7 @@ spring:
     tomcat:
       initial-size: 1
 server:
-  port: 0
+  port: 8099
 eureka:
   instance:
     hostname: localhost
@@ -28,3 +28,4 @@ security:
       userInfoUri: http://localhost:8090/auth/user
       jwt:
         keyUri: http://localhost:8090/auth/oauth/token_key
+

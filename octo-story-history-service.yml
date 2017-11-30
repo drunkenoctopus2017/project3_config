@@ -8,7 +8,6 @@ spring:
     password: guest
     username: guest
     port: 5672
- 
   cloud:
     stream:
       bindings:

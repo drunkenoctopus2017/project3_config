@@ -1,33 +1,26 @@
 spring:
   application:
-    name: octo-story-service
+    name: octo-story-update-manager
+
   rabbitmq:
     host: localhost
     password: guest
     username: guest
     port: 5672
+  
+  
   cloud:
     stream:
       bindings:
-        input:
+        UpdateStoryMessageSource:
           destination: updatestorymessage
     default:
       contentType: application/json
-  jpa:
-    database-platform: org.hibernate.dialect.Oracle10gDialect
-    database: ORACLE
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-  datasource:
-    url: jdbc:oracle:thin:@octocat.cjcqerm3c0hj.us-east-2.rds.amazonaws.com:1521:ORCL
-    username: story_db
-    password: p4ssw0rd
-    driver-class-name: oracle.jdbc.OracleDriver
-    tomcat:
-      initial-size: 1
+        
+
+
 server:
-  port: 0
+  port: 9001
 eureka:
   instance:
     hostname: localhost
