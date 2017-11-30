@@ -18,3 +18,11 @@ hystrix:
       execution:
         timeout:
           enabled: false
+
+
+zuul:
+routes:
+  account:
+    path: /octo-auth/**
+    sensitiveHeaders:
+    serviceId: octo-auth
