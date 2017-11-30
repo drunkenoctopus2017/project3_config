@@ -23,9 +23,9 @@ eureka:
 security:
  oauth2:
    resource:
-     accessTokenUri: http://localhost:8090/auth/oauth/check_token
-     userAuthorizationUri: http://localhost:8090/auth/oauth/authorize
-     userInfoUri: http://localhost:8090/auth/user
+     accessTokenUri: http://localhost:8090/octo-auth/oauth/check_token
+     userAuthorizationUri: http://localhost:8090/octo-auth/oauth/authorize
+     userInfoUri: http://localhost:8090/octo-auth/user
      jwt:
-       keyUri: http://localhost:8090/auth/oauth/token_key	
+       keyUri: http://localhost:8090/octo-auth/oauth/token_key	
 
