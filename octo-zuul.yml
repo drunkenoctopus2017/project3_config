@@ -21,8 +21,8 @@ hystrix:
 
 
 zuul:
-routes:
-  octo-auth:
-    path: /octo-auth/**
-    sensitiveHeaders:
-    serviceId: octo-auth
+  routes:
+    octo-auth:
+      path: /octo-auth/**
+      sensitiveHeaders:
+      serviceId: octo-auth
