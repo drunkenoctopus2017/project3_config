@@ -20,4 +20,4 @@ server:
 eureka:
   instance:
     hostname: localhost
-    instance-id: ${spring.application.name}:${random.int}    
+    instance-id: ${spring.application.name}:${random.int}   
