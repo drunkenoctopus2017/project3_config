@@ -6,16 +6,16 @@ spring:
     database: ORACLE
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   datasource:
     url: jdbc:oracle:thin:@octocat.cjcqerm3c0hj.us-east-2.rds.amazonaws.com:1521:ORCL
-    username: octocat_user
+    username: system_user_db
     password: p4ssw0rd
     driver-class-name: oracle.jdbc.OracleDriver
     tomcat:
-      initial-size: 5
+      initial-size: 1
 server:
-  port: 0
+  port: 8099
 eureka:
   instance:
     hostname: localhost
@@ -28,3 +28,4 @@ security:
      userInfoUri: http://localhost:8090/auth/user
      jwt:
        keyUri: http://localhost:8090/auth/oauth/token_key	
+

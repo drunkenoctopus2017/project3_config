@@ -1,6 +1,8 @@
-spring:
-  application:
-    name: octo-story-service
+﻿# Story event history service
+# used by chart service
+spring: 
+  application: 
+    name: octo-story-history-service
   rabbitmq:
     host: localhost
     password: guest
@@ -21,7 +23,7 @@ spring:
       ddl-auto: update
   datasource:
     url: jdbc:oracle:thin:@octocat.cjcqerm3c0hj.us-east-2.rds.amazonaws.com:1521:ORCL
-    username: story_db
+    username: story_history_db
     password: p4ssw0rd
     driver-class-name: oracle.jdbc.OracleDriver
     tomcat:
