@@ -17,9 +17,14 @@ spring:
 server:
   port: 10000
 eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${DOCKER_HOST_IP}:8761/eureka/
   instance:
-    hostname: localhost
-    instance-id: ${spring.application.name}:${random.int}
+    instanceId: ${spring.application.name}
+    hostname: ${DOCKER_HOST_IP}:${server.port}
 security:
   oauth2:
     resource:

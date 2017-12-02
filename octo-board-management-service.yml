@@ -18,15 +18,20 @@ spring:
 server:
   port: 11000
 eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${DOCKER_HOST_IP}:8761/eureka/
   instance:
-    hostname: localhost
-    instance-id: ${spring.application.name}:${random.int}
+    instanceId: ${spring.application.name}
+    hostname: ${DOCKER_HOST_IP}:${server.port}
 security:
   oauth2:
     resource:
-      accessTokenUri: http://localhost:8090/auth/oauth/check_token
-      userAuthorizationUri: http://localhost:8090/auth/oauth/authorize
-      userInfoUri: http://localhost:8090/auth/user
+      accessTokenUri: http://18.217.119.188:8090/auth/oauth/check_token
+      userAuthorizationUri: http://18.217.119.188:8090/auth/oauth/authorize
+      userInfoUri: http://18.217.119.188:8090/auth/user
       jwt:
-        keyUri: http://localhost:8090/auth/oauth/token_key
+        keyUri: http://18.217.119.188:8090/auth/oauth/token_key
 

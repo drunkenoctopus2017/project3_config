@@ -8,9 +8,9 @@ spring:
 eureka:
   client:
     register-with-eureka: true
-    fetch-registry: true 
+    fetch-registry: true
     serviceUrl:
-      defaultZone: http://18.217.119.188:8761/eureka
+      defaultZone: http://${DOCKER_HOST_IP}:8761/eureka/
 
 hystrix:
   command:
