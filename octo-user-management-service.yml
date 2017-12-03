@@ -21,10 +21,9 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://${DOCKER_HOST_IP}:8761/eureka/
+      defaultZone: http://18.221.213.251:8761/eureka/
   instance:
     instanceId: ${spring.application.name}
-    hostname: ${DOCKER_HOST_IP}:${server.port}
 security:
   oauth2:
     resource:
