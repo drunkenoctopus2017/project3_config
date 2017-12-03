@@ -28,9 +28,9 @@ eureka:
 security:
   oauth2:
     resource:
-      accessTokenUri: http://18.217.119.188:8090/auth/oauth/check_token
-      userAuthorizationUri: http://18.217.119.188:8090/auth/oauth/authorize
-      userInfoUri: http://18.217.119.188:8090/auth/user
+      accessTokenUri: http://${DOCKER_HOST_IP}:8090/auth/oauth/check_token
+      userAuthorizationUri: http://${DOCKER_HOST_IP}:8090/auth/oauth/authorize
+      userInfoUri: http://${DOCKER_HOST_IP}:8090/auth/user
       jwt:
-        keyUri: http://18.217.119.188:8090/auth/oauth/token_key
+        keyUri: http://${DOCKER_HOST_IP}:8090/auth/oauth/token_key
 
