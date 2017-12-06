@@ -24,8 +24,6 @@ eureka:
       defaultZone: http://18.221.213.251:8761/eureka/
   instance:
     instanceId: ${spring.application.name}
-    hostname: 18.221.213.251:10000
-
 security:
   oauth2:
     resource:

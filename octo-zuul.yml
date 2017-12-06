@@ -25,8 +25,7 @@ zuul:
       path: /octo-auth/**
       sensitiveHeaders: 
       serviceId: octo-auth
-
-    octo-user-management-service:
+    user-management-service:
       path: /octo-user-management-service/**
       sensitiveHeaders:
       serviceId: octo-user-management-service
