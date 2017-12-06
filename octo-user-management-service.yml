@@ -25,6 +25,7 @@ eureka:
   instance:
     instanceId: ${spring.application.name}
     hostname: 18.221.213.251:10000
+
 security:
   oauth2:
     resource:
@@ -33,6 +34,4 @@ security:
       userInfoUri: http://18.221.213.251:8090/auth/user
       jwt:
         keyUri: http://18.221.213.251:8090/auth/oauth/token_key
-
-
 
