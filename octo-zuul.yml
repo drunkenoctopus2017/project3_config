@@ -29,19 +29,19 @@ zuul:
       path: /octo-user-management-service/**
       sensitiveHeaders:
       serviceId: octo-user-management-service
-	  octo-board-service:
+    octo-board-service:
       path: /octo-board-service/**
       sensitiveHeaders:
       serviceId: octo-board-service
-	  octo-story-service:
+    octo-story-service:
       path: /octo-story-service/**
       sensitiveHeaders:
       serviceId: octo-story-service
-	  octo-story-history-service:
+    octo-story-history-service:
       path: /octo-story-history-service/**
       sensitiveHeaders:
       serviceId: octo-story-history-service
-	  octo-task-service:
+    octo-task-service:
       path: /octo-task-service/**
       sensitiveHeaders:
       serviceId: octo-task-service
