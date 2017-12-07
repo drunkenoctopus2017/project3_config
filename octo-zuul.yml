@@ -30,9 +30,9 @@ zuul:
       sensitiveHeaders:
       serviceId: octo-user-management-service
     octo-board-service:
-      path: /octo-board-service/**
+      path: /octo-board-management-service/**
       sensitiveHeaders:
-      serviceId: octo-board-service
+      serviceId: octo-board-management-service
     octo-story-service:
       path: /octo-story-service/**
       sensitiveHeaders:
