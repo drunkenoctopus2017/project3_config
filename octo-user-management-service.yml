@@ -27,9 +27,9 @@ eureka:
 security:
   oauth2:
     resource:
-      accessTokenUri: http://18.221.213.251:8090/auth/oauth/check_token
-      userAuthorizationUri: http://18.221.213.251:8090/auth/oauth/authorize
-      userInfoUri: http://18.221.213.251:8090/auth/user
+      accessTokenUri: http://18.221.213.251:8090/oauth/check_token
+      userAuthorizationUri: http://18.221.213.251:8090/oauth/authorize
+      userInfoUri: http://18.221.213.251:8090/user
       jwt:
-        keyUri: http://18.221.213.251:8090/auth/oauth/token_key
+        keyUri: http://18.221.213.251:8090/oauth/token_key
 
