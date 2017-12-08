@@ -47,3 +47,4 @@ security:
       userInfoUri: http://18.221.213.251:8090/user
       jwt:
         keyUri: http://18.221.213.251:8090/oauth/token_key
+
