@@ -7,7 +7,7 @@ spring:
     database: ORACLE
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   datasource:
     url: jdbc:oracle:thin:@octocat.crwx5goxs3em.us-east-2.rds.amazonaws.com:1521:ORCL
     username: system_user_db
@@ -25,11 +25,3 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     instanceId: ${spring.application.name}
-security:
-  oauth2:
-    resource:
-      accessTokenUri: http://localhost:8090/oauth/check_token
-      userAuthorizationUri: http://localhost:8090/oauth/authorize
-      userInfoUri: http://localhost:8090/user
-      jwt:
-        keyUri: http://localhost:8090/oauth/token_key
