@@ -3,10 +3,6 @@ spring:
     dispatchOptionsRequest: true
   application:
     name: octo-auth
-server:
-  port: 8090
-keystore:
-  password: drunkenOctopus      
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
     database: ORACLE
@@ -20,6 +16,11 @@ keystore:
     driverClassName: oracle.jdbc.OracleDriver
     tomcat:
       initial-size: 1
+server:
+  port: 8090
+keystore:
+  password: drunkenOctopus      
+  
 
 eureka:
   client:
