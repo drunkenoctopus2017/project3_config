@@ -22,14 +22,14 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://18.217.124.245:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     instanceId: ${spring.application.name}
 security:
   oauth2:
     resource:
-      accessTokenUri: http://18.217.124.245:8090/oauth/check_token
-      userAuthorizationUri: http://18.217.124.245:8090/oauth/authorize
-      userInfoUri: http://18.217.124.245:8090/user
+      accessTokenUri: http://localhost:8090/oauth/check_token
+      userAuthorizationUri: http://localhost:8090/oauth/authorize
+      userInfoUri: http://localhost:8090/user
       jwt:
-        keyUri: http://18.217.124.245:8090/oauth/token_key
+        keyUri: http://localhost:8090/oauth/token_key
