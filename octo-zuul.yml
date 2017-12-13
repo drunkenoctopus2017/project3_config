@@ -10,7 +10,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://18.217.124.245:8761/eureka/
+      defaultZone: http://18.217.124.245:8761/eureka/,http://18.217.124.245:8762/eureka/
 
 hystrix:
   command:
