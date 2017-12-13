@@ -2,6 +2,11 @@
 spring:
   application:
     name: octo-user-management-service
+  rabbitmq:
+    host: 18.217.124.245
+    password: guest
+    username: guest
+    port: 5672
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
     database: ORACLE
@@ -25,6 +30,9 @@ eureka:
       defaultZone: http://18.217.124.245:8761/eureka/,http://18.217.124.245:8762/eureka/
   instance:
     instanceId: ${spring.application.name}
+management:
+  security:
+    enabled: false
 security:
   oauth2:
     resource:
