@@ -7,7 +7,7 @@ spring:
     database: ORACLE
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   datasource:
     url: jdbc:oracle:thin:@octocat.crwx5goxs3em.us-east-2.rds.amazonaws.com:1521:ORCL
     username: system_user_db
