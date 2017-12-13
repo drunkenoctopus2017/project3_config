@@ -14,14 +14,14 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:oracle:thin:@octocat.cjcqerm3c0hj.us-east-2.rds.amazonaws.com:1521:ORCL
+    url: jdbc:oracle:thin:@octocat.crwx5goxs3em.us-east-2.rds.amazonaws.com:1521:ORCL
     username: system_user_db
     password: p4ssw0rd
     driver-class-name: oracle.jdbc.OracleDriver
     tomcat:
       initial-size: 1
 server:
-  port: 10000
+  port: 10001
 eureka:
   client:
     register-with-eureka: true
