@@ -28,8 +28,6 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://18.217.124.245:8761/eureka/
-  instance:
-    instanceId: ${spring.application.name}
 management:
   security:
     enabled: false
